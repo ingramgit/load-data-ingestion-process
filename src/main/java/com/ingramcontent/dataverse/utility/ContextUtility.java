@@ -134,8 +134,7 @@ public class ContextUtility implements java.io.Serializable {
 				setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			break;
 			case Constant.CONTAINER_ID:
-			    producer.setContainerId(value);
-				setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
+			    
 			break;
 			case Constant.THRESHOLD:
 			    Map<String, Integer> thresholdMap = new ObjectMapper().readValue(value, HashMap.class);
@@ -152,6 +151,11 @@ public class ContextUtility implements java.io.Serializable {
 			      Map<String, String> input = new ObjectMapper().readValue(value, HashMap.class);
 			      filter.setInput(input);
 				  setProcessVariable(context, Constant.DATA_FILTER, filter);
+			  }
+			  
+			  if (key != null && key.equalsIgnoreCase(Constant.CONTAINER_ID+index)) {
+			     producer.setContainerId(value);
+				 setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			  }
 		}
     	
