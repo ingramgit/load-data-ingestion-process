@@ -153,7 +153,7 @@ public class ContextUtility implements java.io.Serializable {
 				  setProcessVariable(context, Constant.DATA_FILTER, filter);
 			  }
 			  
-			  if (key != null && key.equalsIgnoreCase(Constant.CONTAINER_ID+index)) {
+			  if (key != null && key.equalsIgnoreCase(Constant.CONTAINER_ID_+index)) {
 			     producer.setContainerId(value);
 				 setProcessVariable(context, Constant.PRODUCER_REQUEST, producer);
 			  }
