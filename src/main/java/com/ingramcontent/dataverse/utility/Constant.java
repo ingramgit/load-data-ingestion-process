@@ -41,6 +41,7 @@ public class Constant implements java.io.Serializable {
     public static final String THRESHOLD = "threshold";
     public static final String PIPELINE_CODE_ = "pipelineCode_";
     public static final String DATAFILTER_ = "dataFilter_";
+    public static final String RUN_JOB_ = "run_job_";
     public static final String PRODUCER_REQUEST = "producerRequest";
     public static final String DATA_FILTER = "dataFilter";
     
