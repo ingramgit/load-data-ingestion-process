@@ -157,6 +157,7 @@ public class ContextUtility implements java.io.Serializable {
 			  
 			  if (key != null && key.equalsIgnoreCase(Constant.RUN_JOB_+index)) {
 			     boolean run = "1".equalsIgnoreCase(value); 
+			     System.out.println("___________ run = " + run);
 			     setProcessVariable(context, Constant.RUN_JOB, run);
 			  }
 			 break; 
