@@ -11,16 +11,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>kie-workbench</id>
-        <url>${env.KIE_MAVEN_REPO}</url>
+        <id>jboss-public-repository-group</id>
+        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-public-repository-group</id>
-        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+        <id>kie-workbench</id>
+        <url>${env.KIE_MAVEN_REPO}</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
