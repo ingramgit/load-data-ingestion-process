@@ -22,7 +22,12 @@ public class Producer implements java.io.Serializable {
 
 	private java.lang.String containerId;
 	private Map<String, String> dataFilter;
-	
+
+	private java.util.List<java.lang.String> mappingColumns;
+
+	private java.lang.String schema;
+
+	private java.lang.String filename;
 
 	public Producer() {
 	}
@@ -90,19 +95,46 @@ public class Producer implements java.io.Serializable {
 	public void setContainerId(java.lang.String containerId) {
 		this.containerId = containerId;
 	}
-	
+
 	public Map<String, String> getDataFilter() {
 		return dataFilter;
 	}
- 
+
 	public void setDataFilter(Map<String, String> dataFilter) {
 		this.dataFilter = dataFilter;
+	}
+
+	public java.util.List<java.lang.String> getMappingColumns() {
+		return this.mappingColumns;
+	}
+
+	public void setMappingColumns(
+			java.util.List<java.lang.String> mappingColumns) {
+		this.mappingColumns = mappingColumns;
+	}
+
+	public java.lang.String getSchema() {
+		return this.schema;
+	}
+
+	public void setSchema(java.lang.String schema) {
+		this.schema = schema;
+	}
+
+	public java.lang.String getFilename() {
+		return this.filename;
+	}
+
+	public void setFilename(java.lang.String filename) {
+		this.filename = filename;
 	}
 
 	public Producer(java.lang.Long processId, java.lang.String signalName,
 			java.lang.String pipelineCode, java.lang.String taskName,
 			java.lang.String createdDate, java.lang.String dataverseProcessId,
-			java.lang.String requestType, java.lang.String containerId) {
+			java.lang.String requestType, java.lang.String containerId,
+			java.util.List<java.lang.String> mappingColumns,
+			java.lang.String schema, java.lang.String filename) {
 		this.processId = processId;
 		this.signalName = signalName;
 		this.pipelineCode = pipelineCode;
@@ -111,6 +143,9 @@ public class Producer implements java.io.Serializable {
 		this.dataverseProcessId = dataverseProcessId;
 		this.requestType = requestType;
 		this.containerId = containerId;
+		this.mappingColumns = mappingColumns;
+		this.schema = schema;
+		this.filename = filename;
 	}
 
 }
