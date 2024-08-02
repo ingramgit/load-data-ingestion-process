@@ -3,10 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.dataverse</groupId>
-  <artifactId>cron-job3-customer-cs-delta</artifactId>
+  <artifactId>load-data-ingestion-process</artifactId>
   <version>1.0.0</version>
   <packaging>kjar</packaging>
-  <name>cron-job3-customer-cs-delta</name>
+  <name>load-data-ingestion-process</name>
   <description>Call kafka API to load the item data</description>
   <dependencies>
     <dependency>
